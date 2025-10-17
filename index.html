@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Count Attendance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      margin-top: 40px;
+    }
+    video {
+      border: 3px solid #333;
+      border-radius: 10px;
+      width: 400px;
+      height: 300px;
+    }
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📸 Face Recognition Attendance</h1>
+  <video id="video" autoplay muted playsinline></video>
+  <h2 id="status">Initializing...</h2>
+
+  <!-- Load TensorFlow.js and BlazeFace -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+  <script src="script.js"></script>
+</body>
+</html>
